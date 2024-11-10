@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* navbar */
+  .horizontal {
+    @apply border-b-2 border-blue uppercase font-bold;
+  }
+
+  .drop-down {
+    @apply hidden absolute right-0 pt-4 group-hover:block;
+  }
+  .drop-down-menu {
+    @apply flex flex-col gap-2 w-32 py-3 px-5 bg-slate-100 rounded;
+  }
+}
